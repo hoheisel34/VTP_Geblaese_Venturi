@@ -170,43 +170,66 @@ Unmittelbar hinter dem Gebläseausgang ist ein Diffusor angeordnet, der durch Re
 Die Erfassung des statischen Drucks erfolgt über vier gleichmäßig über den Rohrumfang verteilte Druckbohrungen (Position~5), die über eine Ringleitung mit einem elektronischen Drucksensor verbunden sind. Zur Bestimmung des dynamischen Drucks am Düsenaustritt wird ein Prandtl-Rohr (Position~6) eingesetzt, welches ein punktförmiges Messverfahren darstellt.
 
 \subsection{Versuchsergebnisse}
-
-Dichte Luft
+Zuerst wird die Dichte der Luft ermittelt. Dabei wird der Luftdruck, die Luftfeuchtigkeit sowie die Temperatur im Versuchsraum gemessen:
+\begin{table}[H]
+    \centering
+\begin{tabular}{c|c}
+    Luftdruck & 955,5 hPa\\
+    Luftfeuchtigkeit & 38 \% \\
+    Temperatur & 19,6 °C
+\end{tabular}
+\end{table}
+Es wurde eine Luftfeuchtigkeit gemessen von $\varphi = 38 \ \%$. Da Diese unter $50 \%$ liegt, wird mit einer Gaskonstante von $R_S = 287,05 \ \frac{J}{kgK}$ gerechnet. 
+Mit diesen Werten kann auf die Dichte der Luft geschlossen werden:
 \begin{equation}
     \varrho = \frac{p_\infty}{R_S T}
 \end{equation}
-Es wurde eine Luftfeuchtigkeit gemessen von $\varphi = 38 \ \%$. Aus dem Skript kann dadurch mit einer Gaskonstante von $R_S = 287,05 \ \frac{J}{kgK}$ gerechnet werden. 
+
 \begin{equation*}
     \varrho = \frac{95545 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K} = 1,137 \;\frac{kg}{m^3}
 \end{equation*}
 
-Berechnung des Volumenstrom bei einem offen Rohr $D_D=200\ mm$ und einer Drehzahl von $n=2500 \ \frac{1}{min}$:
+Vortlaufend werden sechs, für das Gebläse charakterisierende, Kennlinien ermittelt:
+\begin{itemize}
+    \item $\dot{V} = \dot{V} (N)$
+    \item $\Delta p_{t,12} = \Delta p_{t,12} (N)$
+    \item $P_W =P_W(N)$
+    \item $\eta = \eta(N)$
+    \item $\Delta p_{t,12} = \Delta p_{t,12} (\dot{V})$
+    \item $\Psi = \Psi (\varphi)$
+\end{itemize}
+Die Gleichung zur berechnung des Volumenstrom bei einem offen Rohr $D_D=200\ mm$ und einer Drehzahl von $n=2500 \ \frac{1}{min}$:
 \begin{equation}
     \dot{V}= k_1 \cdot c_{6,ax} \cdot \frac{\pi D_D^2}{4} 
 \end{equation}
-
-\begin{equation*}
-    \dot{V} = 0,8733  \cdot 15,86 \frac{m}{s} \cdot \frac{\pi \cdot (0,2 \ m)^2}{4} = 0,435 \ \frac{m^3}{s}
-\end{equation*}
-
+Für die Berechnung des Volumenstroms wird, der dynamische Druck am Düsenende gemessen. Mit diesem Druck kann auf die Geschwindigkeit der Luft geschlossen werden:
 \begin{equation}
     c_{6,ax}=\sqrt{\frac{2}{\varrho} \cdot p_6}
 \end{equation}
-
+Bei einem dynamischen Druck von $p_6 = 143 \ Pa$ ergibt sich:
 \begin{equation*}
     c_{6,ax} = \sqrt{\frac{2}{1,137\frac{kg}{m^3}} \cdot 143 \ Pa} \ = 15,86 \ \frac{m}{s}
 \end{equation*}
+Weiter wird mit einem Korrekturfaktor von $k_1 = 0,8733$ und der Geschwindigkeit $c_{6,ax}$ der Volumenstrom ermittelt:
+\begin{equation*}
+    \dot{V} = 0,8733  \cdot 15,86 \frac{m}{s} \cdot \frac{\pi \cdot (0,2 \ m)^2}{4} = 0,435 \ \frac{m^3}{s}
+\end{equation*}
+Der Korrekturfaktor ist von nöten, da der dynamische Druck an Punkt 6 nur punktuell gemessen wird und dem entsprechend nicht der Durchschnittsgeschwindigkeit entspricht. Der Korrekturfaktor wurde im Skript vorgegeben.\\
+Mit den verschiedenen Düsenöffnungen und Drehzahlen ergeben sich folgende Kennlinien:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 1 \linewidth]{Plots/Gebläse/Volumentstrom_Plot.png}
+\end{figure}
 
-Berechnung des Drucks an Position 2:
+Berechnung der Totaldruckerhöhung durch das Gebläse:
 \begin{equation}
-    p_2=p_5 + \zeta \frac{\varrho}{2} c_5^2, \quad \text{wobei: } \zeta = 0,25
+    \Delta p_{t,12}=p_5 + \zeta \frac{\varrho}{2} c_5^2, \quad \text{wobei: } \zeta = 0,25
 \end{equation}
 \begin{equation*}
-    p_2=40 \ Pa + 0,25 \cdot \frac{1,137 \ \frac{kg}{m^3}}{2} \cdot (13,85 \ \frac{m}{s})^2 = 67,26 \ Pa
+    \Delta p_{t,12}=40 \ Pa + 1,25 \cdot \frac{1,137 \ \frac{kg}{m^3}}{2} \cdot (13,85 \ \frac{m}{s})^2 = 176,3 \ Pa
 \end{equation*}
 
-mit $c_5$ der mittleren Strömungsgeschwindigkeit im Rohr
-
+mit $c_5$ der mittleren Strömungsgeschwindigkeit im Rohr, welche mittels der Kontinuitätsgleichung berechnet wird:
 \begin{equation}
     c_5 = \frac{\dot V}{A} = \frac{\dot V}{\frac{\pi \cdot D_R^2}{4}}
 \end{equation}
@@ -215,14 +238,11 @@ mit $c_5$ der mittleren Strömungsgeschwindigkeit im Rohr
     c_5 =  \frac{0,435 \ \frac{m^3}{s}}{\frac{\pi \cdot(0,2 \ m)^2}{4}} = 13,85 \ \frac{m}{s}
 \end{equation*}
 
-Berechnung der Totaldruckerhöhung durch das Gebläse:
-\begin{equation}
-    \Delta p_{t,12} = 1,25 \cdot \frac{\rho}{2} \cdot c_5^2 + p_5
-\end{equation}
-
-\begin{equation*}
-    \Delta p_{t,12}= 1,25 \cdot \frac{1,137 \ \frac{kg}{m^3}}{2} \cdot (13,85 \ \frac{m}{s})^2 + 40 \ Pa = 176,31 \ Pa
-\end{equation*}
+Bei anderen Drehzahlen und Düsenöffnungen ergeben sich folgende Kennlinien:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Plots/Gebläse/Delta_p.png}
+\end{figure}
 
 Berechnung der Wellenleistung:
 \begin{equation}
@@ -232,50 +252,61 @@ Berechnung der Wellenleistung:
 \begin{equation*}
     P_W = 2,43 \ Nm \cdot 2\pi \cdot \frac{2500}{60}\frac{1}{s} = 636,17 \ W
 \end{equation*}
-Berechnung des Wirkungsgrades: 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Plots/Gebläse/P_welle_Plot.png}
+\end{figure}
+Mit der Wellenleistung wird der Wirkungsgrad berechnet: 
 \begin{equation}
     \eta_{fluid} = \frac{P_{fluid}}{P_{mech}}=\frac{\Delta p_{t,12} \cdot \dot V}{P_W}
 \end{equation}
-
 \begin{equation*}
     \eta_{fluid} = \frac{176,31 \ Pa \cdot 0,435 \ \frac{m^3}{s}}{636,17 \ W} = 0,1206 \; \widehat= \ 12,1 \ \%
 \end{equation*}
-
-Berechnung der dimensionslosen Kennzahlen: 
-\newline
-Lieferzahl $\phi$ : 
+Im folgenden Plot werden die Kennlinien wieder sichtbar. Wichtig hierbei ist, dass diesmal die Drehzahl über die Linien konstant ist und sich die Düsenöffnungen ändern:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Plots/Gebläse/eta_plot.png}
+\end{figure}
+Zusätzlich wird ein Muscheldiagram erstellt, mithilfe von griddata in Matlab. Damit werden Flächen mit konstantem Wirkungsgrad sichtbar:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Plots/Gebläse/Muscheldiagramm.png}
+\end{figure}
+Zuletzt werden die dimensionslosen Kennzahlen, Lieferzahl $\phi$ und die Druckziffer $\Psi$ ermittelt: 
 \begin{equation}
-    \phi = \frac{\dot V}{\frac{\pi^2}{4}\cdot D_L^3 \cdot n}
+    \varphi = \frac{\dot V}{\frac{\pi^2}{4}\cdot D_L^3 \cdot n}
 \end{equation}
-
 \begin{equation*}
-    \phi = \frac{0,435 \ \frac{m^3}{s}}{\frac{\pi^2}{4}\cdot (0,5\ m)^3 \cdot (\frac{2500}{60}\frac{1}{s})} = 0,0338
+    \varphi = \frac{0,435 \ \frac{m^3}{s}}{\frac{\pi^2}{4}\cdot (0,5\ m)^3 \cdot (\frac{2500}{60}\frac{1}{s})} = 0,0338
 \end{equation*}
-\newline
 
-Druckziffer $\Psi$:
 \begin{equation}
     \Psi = \frac{\Delta p_{t,12}}{\frac{\rho}{2}\cdot \pi^2 \cdot D_L^2 \cdot n^2}
 \end{equation}
-
 \begin{equation*}
     \Psi = \frac{176,31 \ Pa}{\frac{1,137\ \frac{kg}{m^3}}{2}\cdot \pi ^2 \cdot (0,5 \ m )^2 \cdot (\frac{2500}{60}\frac{1}{s})^2} = 0,0724
 \end{equation*}
-\newline
+Plottet man nun diese Kennzahlen sieht man, dass alle übereinander liegen:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Plots/Gebläse/Psi_plot.png}
+\end{figure}
 
-Leistungsziffer $\lambda$:
-\begin{equation}
-    \lambda = \frac{\phi \cdot \Psi}{\eta_{fluid}} 
-\end{equation}
+%Leistungsziffer $\lambda$:
+%\begin{equation}
+%    \lambda = \frac{\phi \cdot \Psi}{\eta_{fluid}} 
+%\end{equation}
+%
+%\begin{equation*}
+%    \lambda = \frac{0,0338\cdot 0,0724}{0,1206}= 0,0203
+%\end{equation*}
+%
+%\subsection{Interpretation der Ergebnisse}
 
-\begin{equation*}
-    \lambda = \frac{0,0338\cdot 0,0724}{0,1206}= 0,0203
-\end{equation*}
-
-\subsection{Interpretation der Ergebnisse}
-
-
-\subsection{Anhang Gebläse Berechnungen}
+\clearpage
+%\subsection{Anhang Gebläse Berechnungen}
 
 \newpage
 \section{Venturi}

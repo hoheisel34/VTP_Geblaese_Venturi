@@ -1,17 +1,20 @@
 # Fdb version 4
-["biber main"] 1775562734.90565 "main.bcf" "main.bbl" "main" 1775562873.6334 0
-  "main.bcf" 1775562873 108561 b6d7e936e2e441fbb970d541d6ef0f73 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1775570595.29713 -1
+  "Literaturverzeichnis.bib" 1775562543 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.bcf" 1775570594 108561 b6d7e936e2e441fbb970d541d6ef0f73 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1775562869.86439 "c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/main.tex" "main.pdf" "main" 1775562873.63433 0
+["pdflatex"] 1775570591.64448 "c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/main.tex" "main.pdf" "main" 1775570595.29827 0
   "Bilder/HM_Logo_RGB.png" 1775562505 25981 73417aab32ebbad580710f52479f37c8 ""
   "Bilder/Venturi_Werte.png" 1775562507 51132 13ae2b5ab6859f9b245c365febcd8745 ""
   "Bilder/Versuchsaufbau.png" 1775562511 118443 8c76add4c34a9e088ecd2768c91867b4 ""
   "Bilder/Versuchsaufbau_Venturi.png" 1775562509 106056 ba581f2a548dad2f8f61f704bdc7b0b5 ""
   "C:/Users/hohei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774704947 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/hohei/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1774706414 11548 0ebf1c8ea6b269a87072d6e42bd80151 ""
   "C:/Users/hohei/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1774704806 13333849 4ac455cc34e8a227fd6f0060d23bfc07 ""
+  "C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -226,16 +229,22 @@
   "C:/Users/hohei/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/hohei/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/hohei/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
+  "Plots/Gebläse/Delta_p.png" 1775570440 151111 b877f374b4cad60e9529d83269174c9b ""
+  "Plots/Gebläse/Muscheldiagramm.png" 1775570444 374755 c897814f2eb5a5cb0706aadf46a13f9b ""
+  "Plots/Gebläse/P_welle_Plot.png" 1775570441 156920 ba8f8ce4adbaa707d46bf0bf744b2e87 ""
+  "Plots/Gebläse/Psi_plot.png" 1775570445 157594 7d47cb889615b379e7bc2217fc038910 ""
+  "Plots/Gebläse/Volumentstrom_Plot.png" 1775570439 148818 557aad4a51c18dab54164a51772d48df ""
+  "Plots/Gebläse/eta_plot.png" 1775570442 196758 599dd83835548e710d23b529283813d1 ""
   "Plots/Venturi/Druckverlauf.png" 1775562535 62784 81fcf32e8347d0f15a6a1d3422e4e1e6 ""
   "Plots/Venturi/Geschwindigkeit.png" 1775562539 62009 a7c2c7f55d9687859ba7fa7d791b0b37 ""
   "Plots/Venturi/cp.png" 1775562534 63730 717d591f339813b8b88f08414008f9f1 ""
-  "c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/main.tex" 1775562865 20054 972e14f20483d6ff9e6d99bd156ec135 ""
-  "main.aux" 1775562873 11604 681792eaa1a00e16d6f71886300d79a8 "pdflatex"
+  "c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/main.tex" 1775570587 22436 0d496ca13b9946b52828d6aba5a4b62b ""
+  "main.aux" 1775570594 10598 22e6516e89e7e2f35923af54968a5223 "pdflatex"
   "main.bbl" 1775562747 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.lof" 1775562873 771 33175c1aebe1573ed965fe8b6537b971 "pdflatex"
-  "main.run.xml" 1775562873 2345 cb4e4977b2e09e8e5f3201ce23cba37a "pdflatex"
-  "main.tex" 1775562865 20054 972e14f20483d6ff9e6d99bd156ec135 ""
-  "main.toc" 1775562873 1908 29b459bb761f984891a749888132b765 "pdflatex"
+  "main.lof" 1775570594 780 6d0386be28724b2b5d481efd5e66fbcf "pdflatex"
+  "main.run.xml" 1775570594 2345 cb4e4977b2e09e8e5f3201ce23cba37a "pdflatex"
+  "main.tex" 1775570587 22436 0d496ca13b9946b52828d6aba5a4b62b ""
+  "main.toc" 1775570594 1726 4b66dde157bba8e5e9011be91d91cc90 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
