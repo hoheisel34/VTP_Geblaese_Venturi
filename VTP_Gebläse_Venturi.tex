@@ -274,7 +274,7 @@ Zusätzlich wird ein Muscheldiagram erstellt, mithilfe von griddata in Matlab. D
     \centering
     \includegraphics[width=\linewidth]{Plots/Gebläse/Muscheldiagramm.png}
 \end{figure}
-Zuletzt werden die dimensionslosen Kennzahlen, Lieferzahl $\phi$ und die Druckziffer $\Psi$ ermittelt: 
+Zuletzt werden die dimensionslosen Kennzahlen, Lieferzahl $\varphi$ und die Druckziffer $\Psi$ ermittelt: 
 \begin{equation}
     \varphi = \frac{\dot V}{\frac{\pi^2}{4}\cdot D_L^3 \cdot n}
 \end{equation}
@@ -304,11 +304,7 @@ Plottet man nun diese Kennzahlen sieht man, dass alle übereinander liegen:
 %\end{equation*}
 %
 %\subsection{Interpretation der Ergebnisse}
-
 \clearpage
-%\subsection{Anhang Gebläse Berechnungen}
-
-\newpage
 \section{Venturi}
 \subsection{Einleitung / Abstract}
 Im folgenden Versuch wird das Druck- und Geschwindigkeitsverhalten einer Strömung innerhalb eines Venturi-Rohrs analysiert. Auf experimentellem und theoretischem Weg werden im Verlauf des Rohrs die Druckwerte, der Druckbeiwert und die Geschwindigkeit ermittelt und anschließend graphisch ausgewertet und verglichen.
@@ -404,16 +400,14 @@ Zuletzt wird aus den gemessenen Drücken $p_i$ und $p_{0,dyn}$, dem errechneten 
 \subsection{Interpretation der Ergebnisse}
 Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle zusammen mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck nimmt wieder zu. Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem Geschwindigkeitsprofil. Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf. Die Abweichung der beiden Verläufe zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor. Durch diese Einflüsse liegen die realen Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und der auch der Endwert des Drucks liegt unterhalb des Startwerts.
 
-\subsection{Anhang Venturi Berechnungen}
-\subsubsection{Messung}
-\begin{figure}[h]
+\section{Anhang}
+\subsubsection*{Messwerte}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Bilder/Venturi_Werte.png}
-    \caption{Wertetabelle Venturi}
-    \label{fig:Venturi-Werte}
+    \includegraphics[scale=0.4, angle=90]{Bilder/Messwerte.png}
 \end{figure}
 \newpage
-\subsubsection{MATLAB-Code}
+\subsubsection*{MATLAB-Code}
 \begin{lstlisting}
 clc;
 clear;

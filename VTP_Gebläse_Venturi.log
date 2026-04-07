@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.28)  7 APR 2026 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.28)  7 APR 2026 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/main.tex
-(c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/main.tex
+**c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/VTP_Gebläse_Venturi.tex
+(c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/VTP_Gebläse_Venturi.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (C:\Users\hohei\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrarticle.cls
@@ -1096,11 +1096,11 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 LaTeX Warning: Unused global option(s):
     [pdfpaper].
 
-(main.aux
+(VTP_Gebläse_Venturi.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 11.
 )
-\openout1 = `main.aux'.
+\openout1 = `VTP_Gebläse_Venturi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -1201,11 +1201,11 @@ File: german.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `main.bcf'.
+\openout3 = `VTP_Gebläse_Venturi.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
+Package biblatex Info: ... file 'VTP_Gebläse_Venturi.bbl' found.
+ (VTP_Gebläse_Venturi.bbl)
 Package biblatex Info: Reference section=0 on input line 58.
 Package biblatex Info: Reference segment=0 on input line 58.
 Package hyperref Info: Link coloring ON on input line 58.
@@ -1226,7 +1226,7 @@ Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 78.
 (pdftex.def)             Requested size: 136.57462pt x 63.02821pt.
  [1
 
-{C:/Users/hohei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Bilder/HM_Logo_RGB.png>] (main.toc
+{C:/Users/hohei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Bilder/HM_Logo_RGB.png>] (VTP_Gebläse_Venturi.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (C:\Users\hohei\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1236,7 +1236,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write5
-\openout5 = `main.toc'.
+\openout5 = `VTP_Gebläse_Venturi.toc'.
 
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
@@ -1259,7 +1259,7 @@ Overfull \vbox (11.76291pt too high) has occurred while \output is active []
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 137.
  [2]
-<Bilder/Versuchsaufbau.png, id=60, 575.14874pt x 235.88126pt>
+<Bilder/Versuchsaufbau.png, id=56, 575.14874pt x 235.88126pt>
 File: Bilder/Versuchsaufbau.png Graphic file (type png)
 <use Bilder/Versuchsaufbau.png>
 Package pdftex.def Info: Bilder/Versuchsaufbau.png  used on input line 157.
@@ -1283,36 +1283,36 @@ File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 204.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
 [4]
-<Plots/Gebläse/Volumentstrom_Plot.png, id=80, 494.8086pt x 323.0469pt>
+<Plots/Gebläse/Volumentstrom_Plot.png, id=76, 494.8086pt x 318.4698pt>
 File: Plots/Gebläse/Volumentstrom_Plot.png Graphic file (type png)
 <use Plots/Gebläse/Volumentstrom_Plot.png>
 Package pdftex.def Info: Plots/Gebläse/Volumentstrom_Plot.png  used on input line 221.
-(pdftex.def)             Requested size: 455.24411pt x 297.2314pt.
+(pdftex.def)             Requested size: 455.24411pt x 293.02005pt.
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
 Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 233.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [5 <./Plots/Gebläse/Volumentstrom_Plot.png (PNG copy)>]
-<Plots/Gebläse/Delta_p.png, id=91, 496.254pt x 324.4923pt>
+<Plots/Gebläse/Delta_p.png, id=87, 496.254pt x 319.9152pt>
 File: Plots/Gebläse/Delta_p.png Graphic file (type png)
 <use Plots/Gebläse/Delta_p.png>
 Package pdftex.def Info: Plots/Gebläse/Delta_p.png  used on input line 244.
-(pdftex.def)             Requested size: 455.24411pt x 297.675pt.
-<Plots/Gebläse/P_welle_Plot.png, id=92, 490.4724pt x 323.0469pt>
+(pdftex.def)             Requested size: 455.24411pt x 293.47617pt.
+<Plots/Gebläse/P_welle_Plot.png, id=88, 490.4724pt x 318.4698pt>
 File: Plots/Gebläse/P_welle_Plot.png Graphic file (type png)
 <use Plots/Gebläse/P_welle_Plot.png>
 Package pdftex.def Info: Plots/Gebläse/P_welle_Plot.png  used on input line 258.
-(pdftex.def)             Requested size: 455.24411pt x 299.84392pt.
+(pdftex.def)             Requested size: 455.24411pt x 295.59557pt.
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
 Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 260.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [6 <./Plots/Gebläse/Delta_p.png (PNG copy)>]
-<Plots/Gebläse/eta_plot.png, id=101, 489.2679pt x 328.5876pt>
+<Plots/Gebläse/eta_plot.png, id=97, 489.2679pt x 324.0105pt>
 File: Plots/Gebläse/eta_plot.png Graphic file (type png)
 <use Plots/Gebläse/eta_plot.png>
 Package pdftex.def Info: Plots/Gebläse/eta_plot.png  used on input line 270.
-(pdftex.def)             Requested size: 455.24411pt x 305.74374pt.
+(pdftex.def)             Requested size: 455.24411pt x 301.48485pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1321,11 +1321,11 @@ File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 272.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [7 <./Plots/Gebläse/P_welle_Plot.png (PNG copy)>]
-<Plots/Gebläse/Muscheldiagramm.png, id=109, 503.7219pt x 324.9741pt>
+<Plots/Gebläse/Muscheldiagramm.png, id=105, 503.7219pt x 320.397pt>
 File: Plots/Gebläse/Muscheldiagramm.png Graphic file (type png)
 <use Plots/Gebläse/Muscheldiagramm.png>
 Package pdftex.def Info: Plots/Gebläse/Muscheldiagramm.png  used on input line 275.
-(pdftex.def)             Requested size: 455.24411pt x 293.69879pt.
+(pdftex.def)             Requested size: 455.24411pt x 289.56218pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1334,13 +1334,13 @@ File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 277.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [8 <./Plots/Gebläse/eta_plot.png (PNG copy)>]
-<Plots/Gebläse/Psi_plot.png, id=115, 493.845pt x 322.0833pt>
+<Plots/Gebläse/Psi_plot.png, id=111, 493.845pt x 317.5062pt>
 File: Plots/Gebläse/Psi_plot.png Graphic file (type png)
 <use Plots/Gebläse/Psi_plot.png>
 Package pdftex.def Info: Plots/Gebläse/Psi_plot.png  used on input line 294.
-(pdftex.def)             Requested size: 455.24411pt x 296.90506pt.
+(pdftex.def)             Requested size: 455.24411pt x 292.68575pt.
 
-Underfull \vbox (badness 7273) has occurred while \output is active []
+Underfull \vbox (badness 7888) has occurred while \output is active []
 
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
@@ -1349,112 +1349,120 @@ Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 296.
  [9 <./Plots/Gebläse/Muscheldiagramm.png (PNG copy)>]
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 308.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 307.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [10 <./Plots/Gebläse/Psi_plot.png (PNG copy)>]
-<Bilder/Versuchsaufbau_Venturi.png, id=128, 546.04pt x 225.84375pt>
+<Bilder/Versuchsaufbau_Venturi.png, id=124, 546.04pt x 225.84375pt>
 File: Bilder/Versuchsaufbau_Venturi.png Graphic file (type png)
 <use Bilder/Versuchsaufbau_Venturi.png>
-Package pdftex.def Info: Bilder/Versuchsaufbau_Venturi.png  used on input line 323.
+Package pdftex.def Info: Bilder/Versuchsaufbau_Venturi.png  used on input line 319.
 (pdftex.def)             Requested size: 409.71692pt x 169.46164pt.
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 330.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 326.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [11
 
  <./Bilder/Versuchsaufbau_Venturi.png>]
-Overfull \hbox (32.25266pt too wide) in paragraph at lines 354--356
+
+LaTeX Warning: Reference `fig:Venturi-Werte' on page 12 undefined on input line 347.
+
+
+Overfull \hbox (32.25266pt too wide) in paragraph at lines 350--352
 \OT1/cmr/m/n/10 F[]ur die Be-rech-nung des Vo-lu-men-stroms $[]$ wird die lo-ka-le Quer-schnitts-fl[]ache $\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 (0)$ und Str[]omungsgeschwindigkeit
  []
 
-<Plots/Venturi/Geschwindigkeit.png, id=137, 1736.4875pt x 353.32pt>
+<Plots/Venturi/Geschwindigkeit.png, id=132, 1736.4875pt x 353.32pt>
 File: Plots/Venturi/Geschwindigkeit.png Graphic file (type png)
 <use Plots/Venturi/Geschwindigkeit.png>
-Package pdftex.def Info: Plots/Venturi/Geschwindigkeit.png  used on input line 374.
+Package pdftex.def Info: Plots/Venturi/Geschwindigkeit.png  used on input line 370.
 (pdftex.def)             Requested size: 455.24411pt x 92.62659pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Plots/Venturi/Druckverlauf.png, id=139, 1764.5925pt x 354.32375pt>
+<Plots/Venturi/Druckverlauf.png, id=134, 1764.5925pt x 354.32375pt>
 File: Plots/Venturi/Druckverlauf.png Graphic file (type png)
 <use Plots/Venturi/Druckverlauf.png>
-Package pdftex.def Info: Plots/Venturi/Druckverlauf.png  used on input line 386.
+Package pdftex.def Info: Plots/Venturi/Druckverlauf.png  used on input line 382.
 (pdftex.def)             Requested size: 455.24411pt x 91.40833pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 397.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 393.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
 [12]
-<Plots/Venturi/cp.png, id=150, 1751.54375pt x 363.3575pt>
+<Plots/Venturi/cp.png, id=144, 1751.54375pt x 363.3575pt>
 File: Plots/Venturi/cp.png Graphic file (type png)
 <use Plots/Venturi/cp.png>
-Package pdftex.def Info: Plots/Venturi/cp.png  used on input line 400.
+Package pdftex.def Info: Plots/Venturi/cp.png  used on input line 396.
 (pdftex.def)             Requested size: 455.24411pt x 94.43744pt.
-<Bilder/Venturi_Werte.png, id=151, 1657.19125pt x 484.81125pt>
-File: Bilder/Venturi_Werte.png Graphic file (type png)
-<use Bilder/Venturi_Werte.png>
-Package pdftex.def Info: Bilder/Venturi_Werte.png  used on input line 411.
-(pdftex.def)             Requested size: 455.24411pt x 133.17924pt.
+<Bilder/Messwerte.png, id=145, 1463.4675pt x 871.75688pt>
+File: Bilder/Messwerte.png Graphic file (type png)
+<use Bilder/Messwerte.png>
+Package pdftex.def Info: Bilder/Messwerte.png  used on input line 407.
+(pdftex.def)             Requested size: 585.37663pt x 348.69658pt.
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 414.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 409.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [13 <./Plots/Venturi/Geschwindigkeit.png> <./Plots/Venturi/Druckverlauf.png> <./Plots/Venturi/cp.png>]
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 415.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 409.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
- [14 <./Bilder/Venturi_Werte.png>]
+ [14 <./Bilder/Messwerte.png>]
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 474.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 468.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [15]
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 501.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 495.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
- [16] (main.lof)
+ [16] (VTP_Gebläse_Venturi.lof)
 \tf@lof=\write6
-\openout6 = `main.lof'.
+\openout6 = `VTP_Gebläse_Venturi.lof'.
 
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 503.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 497.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
  [17]
 
-LaTeX Warning: Empty bibliography on input line 505.
+LaTeX Warning: Empty bibliography on input line 499.
 
 File: Bilder/HM_Logo_RGB.png Graphic file (type png)
 <use Bilder/HM_Logo_RGB.png>
-Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 507.
+Package pdftex.def Info: Bilder/HM_Logo_RGB.png  used on input line 501.
 (pdftex.def)             Requested size: 50.19043pt x 23.16287pt.
-[18] (main.aux)
+[18] (VTP_Gebläse_Venturi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'VTP_Gebläse_Venturi.run.xml'.
+\openout1 = `VTP_Gebläse_Venturi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43880 strings out of 467867
- 918267 string characters out of 5418334
- 2173330 words of memory out of 5000000
+ 43878 strings out of 467867
+ 918754 string characters out of 5418334
+ 2172326 words of memory out of 5000000
  72064 multiletter control sequences out of 15000+600000
  633943 words of font info for 62 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 122i,25n,121p,11292b,3153s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,25n,121p,11308b,3155s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\hohei\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/hohei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on main.pdf (18 pages, 1758525 bytes).
+Output written on VTP_Gebläse_Venturi.pdf (18 pages, 1808098 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 143 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 406 PDF objects out of 1000 (max. 8388607)
+ 141 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
