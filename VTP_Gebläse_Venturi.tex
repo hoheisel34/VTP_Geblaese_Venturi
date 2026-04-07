@@ -179,7 +179,7 @@ Zuerst wird die Dichte der Luft ermittelt. Dabei wird der Luftdruck, die Luftfeu
     Temperatur & 19,6 °C
 \end{tabular}
 \end{table}
-Es wurde eine Luftfeuchtigkeit gemessen von $\varphi = 38 \ \%$. Da Diese unter $50 \%$ liegt, wird mit einer Gaskonstante von $R_S = 287,05 \ \frac{J}{kgK}$ gerechnet. 
+Es wurde eine Luftfeuchtigkeit gemessen von $\varphi = 38 \ \%$. Da diese unter $50 \%$ liegt, wird mit einer Gaskonstante von $R_S = 287,05 \ \frac{J}{kgK}$ gerechnet. 
 Mit diesen Werten kann auf die Dichte der Luft geschlossen werden:
 \begin{equation}
     \varrho = \frac{p_\infty}{R_S T}
@@ -189,7 +189,7 @@ Mit diesen Werten kann auf die Dichte der Luft geschlossen werden:
     \varrho = \frac{95545 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K} = 1,137 \;\frac{kg}{m^3}
 \end{equation*}
 
-Vortlaufend werden sechs, für das Gebläse charakterisierende, Kennlinien ermittelt:
+Fortlaufend werden sechs, für das Gebläse charakterisierende, Kennlinien ermittelt:
 \begin{itemize}
     \item $\dot{V} = \dot{V} (N)$
     \item $\Delta p_{t,12} = \Delta p_{t,12} (N)$
@@ -214,16 +214,23 @@ Weiter wird mit einem Korrekturfaktor von $k_1 = 0,8733$ und der Geschwindigkeit
 \begin{equation*}
     \dot{V} = 0,8733  \cdot 15,86 \frac{m}{s} \cdot \frac{\pi \cdot (0,2 \ m)^2}{4} = 0,435 \ \frac{m^3}{s}
 \end{equation*}
-Der Korrekturfaktor ist von nöten, da der dynamische Druck an Punkt 6 nur punktuell gemessen wird und dem entsprechend nicht der Durchschnittsgeschwindigkeit entspricht. Der Korrekturfaktor wurde im Skript vorgegeben.\\
+Der Korrekturfaktor ist vonnöten, da der dynamische Druck an Punkt 6 nur punktuell gemessen wird und dem entsprechend nicht der Durchschnittsgeschwindigkeit entspricht. Der Korrekturfaktor wurde im Skript \cite{VTP_Beschreibung} vorgegeben.\\
 Mit den verschiedenen Düsenöffnungen und Drehzahlen ergeben sich folgende Kennlinien:
 \begin{figure}[H]
     \centering
     \includegraphics[width = 1 \linewidth]{Plots/Gebläse/Volumentstrom_Plot.png}
+    \caption{Volumenstrom in Abhängigkeit der Drehzahl}
+    \label{plot:Volumenstrom}
 \end{figure}
 
 Berechnung der Totaldruckerhöhung durch das Gebläse:
+\begin{align}
+    \Delta p_{t,12}&= \frac{\varrho}{2}c_2^2 + p_2 = p_5 + \frac{\varrho}{2}c_5^2 + \zeta \cdot \frac{\varrho}{2}c_5^2, \quad \text{wobei: } \zeta = 0,25 \\
+    \Delta p_{t,12}&=p_5 + 1,25 \cdot \frac{\varrho}{2} c_5^2
+\end{align}
+Diese Gleichung ergibt sich aus der Bernoulli Gleichung wobei bei einem konstanten Rohrquerschnitt gilt: $c_2 = c_5$ und mit berücksichtigung der Druckverluste ergibt sich der Zusammenhang:
 \begin{equation}
-    \Delta p_{t,12}=p_5 + \zeta \frac{\varrho}{2} c_5^2, \quad \text{wobei: } \zeta = 0,25
+    p_2 = p_5 + \zeta \cdot \frac{\varrho}{2}c_5^2
 \end{equation}
 \begin{equation*}
     \Delta p_{t,12}=40 \ Pa + 1,25 \cdot \frac{1,137 \ \frac{kg}{m^3}}{2} \cdot (13,85 \ \frac{m}{s})^2 = 176,3 \ Pa
@@ -242,6 +249,8 @@ Bei anderen Drehzahlen und Düsenöffnungen ergeben sich folgende Kennlinien:
 \begin{figure}[H]
     \centering
     \includegraphics[width = \linewidth]{Plots/Gebläse/Delta_p.png}
+    \caption{Totaldruckerhöhung in Abhängigkeit der Drehzahl}
+    \label{plot:delta_p_N}
 \end{figure}
 
 Berechnung der Wellenleistung:
@@ -256,6 +265,8 @@ Berechnung der Wellenleistung:
 \begin{figure}[H]
     \centering
     \includegraphics[width = \linewidth]{Plots/Gebläse/P_welle_Plot.png}
+    \caption{Wellenleistung in Abhängigkeit der Drehzahl}
+    \label{plot:P_welle}
 \end{figure}
 Mit der Wellenleistung wird der Wirkungsgrad berechnet: 
 \begin{equation}
@@ -268,11 +279,15 @@ Im folgenden Plot werden die Kennlinien wieder sichtbar. Wichtig hierbei ist, da
 \begin{figure}[H]
     \centering
     \includegraphics[width = \linewidth]{Plots/Gebläse/eta_plot.png}
+    \caption{Strömungsmechanischer Wirkungsgrad in Abhängigkeit des Volumenstroms}
+    \label{plot:eta_plot}
 \end{figure}
 Zusätzlich wird ein Muscheldiagram erstellt, mithilfe von griddata in Matlab. Damit werden Flächen mit konstantem Wirkungsgrad sichtbar:
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Plots/Gebläse/Muscheldiagramm.png}
+    \caption{Muscheldiagramm des Radialgebläses}
+    \label{plot:Muscheldiagram}
 \end{figure}
 Zuletzt werden die dimensionslosen Kennzahlen, Lieferzahl $\varphi$ und die Druckziffer $\Psi$ ermittelt: 
 \begin{equation}
@@ -292,8 +307,36 @@ Plottet man nun diese Kennzahlen sieht man, dass alle übereinander liegen:
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Plots/Gebläse/Psi_plot.png}
+    \caption{Druckziffer in Abhängigkeit der Lieferzahl}
+    \label{plot:Psi}
 \end{figure}
 
+\subsection{Interpretation der Ergebnisse}
+Die experimentell gemessenen Messpunkte zeigen insgesamt ein physikalisch konsistentes Verhalten. Diese 
+decken sich gut mit den theoretischen Ähnlichkeitsgesetzen aus dem Lehrbuch \cite{Lehrbuch}. %Hier skript oder Lehrbuch referenzieren
+Der Volumenstrom steigt bei allen Drosselkonfigurationen, wie in Plot \ref{plot:Volumenstrom} sichtbar, linear mit der Drehzahl an. Dies entspricht genau den dem Ähnlichkeitsgesetz
+$\dot{V} \propto N$. Ebenso ist ersichtlich, dass bei kleineren Düsenöffnungen der Volumenstrom niedriger wird, dies lässt sich durch höheren Strömungswiderstand erklären. \\
+Die Totaldruckerhöhung steigt mit der Drehzahl quadratisch an. Dies entspricht ebenso dem
+\\ Ähnlichkeitsgesetz $\Delta p \propto N^2$.
+In Plot \ref{plot:delta_p_N} ist zu erkennen, dass der Druck mit abnehmenden Düsenöffnungen steigt. Dies ist ein
+intuitives Verhalten und kommt den theoretischen Berechnung nahe. \\
+Die Wellenleistung in Plot \ref{plot:P_welle} steigt auch wie die theoretische Ähnlichkeitsgesetze an mit $P_{W} \propto N^3$.
+Zu sehen ist, dass bei offenen Rohr die Leistung am höchsten ist, da dort der größte Volumenstrom gefördert wird. Während bei geschlossenem Rohr nur
+die Reibungs und Ventilationsverluste kompensiert werden müssen.\\
+Der strömungsmechanische Wirkungsgrad $\eta$ in Plot \ref{plot:eta_plot} zeigt ein Maximum bei mittleren Drosselungen und höheren
+Drehzahlen. Es ist zu sehen dass, das Maximum bei allen Variationen auf ca $40 \%$ begrenzt ist. Bei geschlossenen Rohr
+ist der Wirkungsgrad definitionsgemäß Null, da kein Volumenstrom erzeugt wird. Bei offenen Rohr ist der Wirkungsgrad gering,
+da die Totaldruckerhöhung in diesem Falle sehr gering ist. Dieses Verhalten und die Kennlinien sind sehr ähnlich zu den theoretisch
+behandelten Kennlinien im Lehrbuch \cite{Lehrbuch}.\\
+Das Muscheldiagram \ref{plot:Muscheldiagram} zeigt, dass der maximale erreichbare Wirkungsgrad bei $\eta = 55 \%$ liegt. Dementsprechend müssten die Drehzahlen bzw. Drosselungen feiner angepasst werden um diesen optimalen Betriebspunkt zu finden. Ebenso ist zu sehen, dass die
+Kennlinien für $\Delta p_{t,12}$ eine sehr gute Muschelform ergeben und auch sehr ähnlich zu Lehrbuch Kennlinien sind. \\
+Bei den dimensionslosen Kennzahlen in Plot \ref{plot:Psi} ist zu sehen, dass alle Kennlinien auf nahezu einer Linie zusammen
+fallen. Auch das liegt wiederum sehr nah an theoretischen Kennlinien aus dem Lehrbuch \cite{Lehrbuch}. Die geringen Abweichungen lassen sich auf Messwertgenauigkeiten zurückführen. \\
+Hinsichtlich der Messwertgenauigkeiten ist anzumerken, dass die Geschwindigkeitsmessung am Düsenaustritt nur punktuell gemessen wird. Das lässt keine 
+vollständige Messung des Geschwindigkeitsprofil zu. Der Korrekturfaktor $k_1$ wird verwendet um dies auszugleichen, ist aber dennoch nicht
+zu $100 \%$ korrekt. \\
+Insgesamt lässt sich aufgrund des sehr ähnlichen Verhalten der experimentellen Werte zu den theoretischen Werten eine stark repräsentative
+Kennlinie für das Gebläse erschließen. 
 %Leistungsziffer $\lambda$:
 %\begin{equation}
 %    \lambda = \frac{\phi \cdot \Psi}{\eta_{fluid}} 
@@ -342,21 +385,21 @@ Relative Luftfeuchtigkeit $\varphi_L$ & 38 \% \\
 
 Aus dem gemessenen Werten und der spezifischen Gaskonstante $R_S=287,05 \frac{J}{kg \cdot K}$ lässt sich die Luftdichte errechnen.
 \begin{equation*}
-    \varrho = \frac{95545 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K}=1.137 \frac{kg}{m^3}
+    \varrho = \frac{95545 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K}=1,137 \frac{kg}{m^3}
 \end{equation*}
-Die an den Messpunkten 1-8 gemessenen Differenzdrücke wurden in Tabelle \ref{fig:Venturi-Werte} eingetragen. Der statische Druck $p_0$ wird ermittelt, indem eine lineare Extrapolation aus den Folgedrücken $p_1$ und $p_2$ durchgeführt wird.
+Die an den Messpunkten 1-8 gemessenen Differenzdrücke wurden in Tabelle \ref{fig:Messwerte} eingetragen. Der statische Druck $p_0$ wird ermittelt, indem eine lineare Extrapolation aus den Folgedrücken $p_1$ und $p_2$ durchgeführt wird.
 \begin{equation*}
     p_0=p_1+\frac{p_2-p_1}{105mm-45mm}\cdot (0mm-45mm)= 300 Pa
 \end{equation*}
 Für die Berechnung des Volumenstroms $\dot{V}$ wird die lokale Querschnittsfläche $A_i(0)$ und Strömungsgeschwindigkeit $u(0)$ an der Messstelle 0 benötigt. Die Strömungsgeschwindigkeit wird mithilfe der berechneten Luftdichte $\varrho$ und dem dynamischen Druck, welcher mit dem Schrägrohrmanometer gemessen wurde, errechnet.
 \begin{equation*}
-    A_i(0) = \pi \left( \frac{d_i}{2} \right)^2 = \pi \left( \frac{0.104}{2} \right)^2 = 0.0085m^2
+    A_i(0) = \pi \left( \frac{d_i}{2} \right)^2 = \pi \left( \frac{0,104}{2} \right)^2 = 0,0085m^2
 \end{equation*}
 \begin{equation*}
-    u(0)= \sqrt{\frac{2 \cdot p_{0,dyn}}{\varrho}}= \sqrt{\frac{2 \cdot 40Pa}{1.137 \frac{kg}{m^3}}}=8.39 \frac{m}{s}
+    u(0)= \sqrt{\frac{2 \cdot p_{0,dyn}}{\varrho}}= \sqrt{\frac{2 \cdot 40Pa}{1,137 \frac{kg}{m^3}}}=8,39 \frac{m}{s}
 \end{equation*}
 \begin{equation*}
-    \dot{V}=u(0) \cdot A_i(0) = 0.0713 \frac{m^3}{s}
+    \dot{V}=u(0) \cdot A_i(0) = 0,0713 \frac{m^3}{s}
 \end{equation*}
 
 Aus dem Volumenstrom $\dot{V}$ und den lokalen Querschnittsflächen entlang der Strecke des Venturi-Rohrs lässt sich mit folgender Formel der theoretische Geschwindigkeit errechnen und in einem Graphen über die Position x darstellen (Abbildung \ref{fig:Venturi_Geschwindigkeit}).
@@ -398,17 +441,183 @@ Zuletzt wird aus den gemessenen Drücken $p_i$ und $p_{0,dyn}$, dem errechneten 
     \label{fig:Venturi_cp}
 \end{figure}
 \subsection{Interpretation der Ergebnisse}
-Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle zusammen mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck nimmt wieder zu. Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem Geschwindigkeitsprofil. Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf. Die Abweichung der beiden Verläufe zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor. Durch diese Einflüsse liegen die realen Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und der auch der Endwert des Drucks liegt unterhalb des Startwerts.
-
+Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle
+zusammen mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck
+nimmt wieder zu. Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem
+Geschwindigkeitsprofil. Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf.
+Die Abweichung der beiden Verläufe zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor.
+Durch diese Einflüsse liegen die realen Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und auch der Endwert des Drucks
+liegt unterhalb des Startwerts.
 \section{Anhang}
 \subsubsection*{Messwerte}
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4, angle=90]{Bilder/Messwerte.png}
+    \includegraphics[scale=0.35, angle=90]{Bilder/Messwerte.png}
+    \caption{Messwerte Gebläse und Venturi}
+    \label{fig:Messwerte}
 \end{figure}
 \newpage
-\subsubsection*{MATLAB-Code}
-\begin{lstlisting}
+\subsubsection*{MATLAB-Code Gebläse}
+\begin{lstlisting}[language=Matlab, caption={Berechnung und Plot des Volumenstroms $\dot{V}$}, label={code:V_dot}]
+    %% Berechnung_V_dot.m
+N=[1000 1400 1800 2200 2500 2800]';
+
+D_D=[0.200 0.120 0.100 0.080 0.050 0];
+
+%% Staudruck nach Diffusor
+p_6=[19	42 71 110 143 179 67 137 232 351 456 575 89 180 302	459	595	743	110	222	373	562	729	918	128	258	429	649	836	1055 0 0 0 0 0 0];
+p_6_mat=reshape(p_6,6,6);
+% Zeilen = Duesen, Spalten = Drehzahlen
+
+%% Statischer Druck vor Diffusor
+p_5=[25	28 31 36 40 44 94 170 268 390 503 630 105 210 345 519 670 840 142 265 433 643 828 1042 166 302 487 724 926 1161	168	306	500	733	946	1180];
+p_5_mat=reshape(p_5,6,6);
+
+%% Drehmoment an Welle
+M_welle=[0.43 0.8 1.3 1.91 2.43 3.05 0.37 0.68 1.08 1.58 2.03 2.53 0.35 0.62 0.98 1.43 1.82 2.26 0.3 0.52 0.83 1.2 1.53 1.91 0.23 0.39 0.61 0.89 1.13 1.41 0.18 0.3 0.47 0.67 0.86 1.06];
+M_welle_mat=reshape(M_welle,6,6);
+
+k_1=[0.8733 1.025 1.0313 1.0278 1.0227 1];
+
+p_inf = 95545;
+T     = 292.75;
+R_S   = 287.05;
+rho   = p_inf/(R_S*T);
+
+%% Geschwindigkeit & Volumenstrom
+c_6_mat = sqrt(2/rho .* p_6);
+
+i=1;
+d=1;
+while i <=36
+    A_D(d)=pi*D_D(d)^2/4;
+    V_dot(i) = k_1(d) .* c_6_mat(i) .* A_D(d);
+    if mod(i,6)==0
+        d=d+1;
+    end
+    i=i+1;
+end
+V_dot_mat = reshape(V_dot, 6, 6);
+
+%% Plot V_dot ueber N
+figure
+hold on
+for d = 1:6
+    plot(N, V_dot_mat(:,d), 'o-');
+end
+...
+\end{lstlisting}
+\begin{lstlisting}[language=Matlab, caption={Berechnung und Plot der Totaldruckerhöhung $\Delta p_{t,12}$}, label={code:delta_p}]
+    %% Berechnung_delta_pt_12.m
+Berechnung_V_dot
+
+%% Berechnung
+c_5_mat = V_dot_mat ./ (pi * 0.2^2 / 4);
+pt_12_mat = 1.25 * rho/2 .* c_5_mat.^2 + p_5_mat;
+
+%% Plot pt_12 ueber Drehzahl
+figure
+hold on
+for d = 1:6
+    
+    plot(N, pt_12_mat(:,d), 'o-');
+end
+...
+\end{lstlisting}
+\begin{lstlisting}[language=Matlab, caption={Berechnung und Plot der Wellenleistung $P_W$, des Wirkungsgrades und des Muscheldiagramms}, label={code:P_W} ]
+%% Berechnung_P_welle.m
+Berechnung_delta_pt_12
+
+%% Wellenleistung
+omega = (2*pi/60) * [1000 1400 1800 2200 2500 2800]';% (6x1)
+for i=1:6
+    P_welle_mat(:,i) = M_welle_mat(:,i) .* omega;
+end
+
+%% Plot 1: P_welle ueber Drehzahl
+figure
+hold on
+for d = 1:6
+    plot(N, P_welle_mat(:,d), 'o-');
+end
+...
+
+%% Wirkungsgrad
+ eta_mat = (pt_12_mat .* V_dot_mat) ./ P_welle_mat;
+
+%% Plot 2: eta ueber V_dot
+figure
+hold on
+for n = 1:6
+    v = V_dot_mat(n,:);
+    e = eta_mat(n,:);
+    plot(v, e, 'o-');
+end
+...
+
+%% Muscheldiagramm
+x = V_dot_mat(:);
+y = pt_12_mat(:);
+z = eta_mat(:);
+ 
+x_grid = linspace(min(x), max(x), 300);
+y_grid = linspace(min(y), max(y), 300);
+[X, Y] = meshgrid(x_grid, y_grid);
+ 
+% Spline 
+Z = griddata(x, y, z, X, Y, 'cubic');
+ 
+% Gauss-Glaettung der Gridflaeche
+Z = imgaussfilt(Z, 2);
+ 
+figure
+hold on
+ 
+...
+ 
+% Isolinien
+[C, h] = contour(X, Y, Z*100, 10:5:80, ...
+
+ ...
+
+% Kennlinien mit Drehzahl
+colors = lines(6);
+for n = 1:6
+    v = (V_dot_mat(n,:));
+    p = (pt_12_mat(n,:));
+ 
+    % Glaetten der Kennlinie
+    v_s = smooth(v, 3);
+    p_s = smooth(p, 3);
+ 
+    plot(v_s, p_s, 'o-',
+    ...
+end
+\end{lstlisting}
+\begin{lstlisting}[language=Matlab, caption={Berechnung und Plot der Druckziffer $\Psi$ über die Lieferzahl $\varphi$}, label={code:Psi}]
+    %%Daten holen
+Berechnung_P_welle
+
+%% Druckziffer Psi
+n_rps = N / 60;  % Drehzahl von rpm in 1/s
+D_L = 0.5;       % Laufraddurchmesser [m]
+
+% Psi und phi berechnen
+for i=1:6
+psi_mat(:,i) = pt_12_mat(:,i) ./ (rho/2 * pi^2 * D_L^2 .* n_rps.^2);
+phi_mat (:,i)= V_dot_mat(:,i) ./ (pi^2/4 * D_L^3 .* n_rps);
+end
+
+%% Plot: Psi ueber phi
+figure
+hold on
+for n = 1:6
+    plot(phi_mat(n,:), psi_mat(n,:), 'o-');
+end
+\end{lstlisting}
+\newpage
+\subsubsection*{MATLAB-Code Venturi}
+\begin{lstlisting}[language=Matlab, caption={Berechnung und Plot des Druckbeiwerts $c_p$}, label={code:cp}]
 clc;
 clear;
 close;
@@ -493,9 +702,7 @@ legend('u_{theor}(x)')
 \end{lstlisting}
 
 \newpage
-\listoffigures
 \newpage
-\section{Literaturverzeichnis}
 \printbibliography
 
 \end{document}
