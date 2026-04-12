@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber VTP_Gebläse_Venturi"] 1776015951.67096 "VTP_Gebläse_Venturi.bcf" "VTP_Gebläse_Venturi.bbl" "VTP_Gebläse_Venturi" 1776019946.64398 0
+["biber VTP_Gebläse_Venturi"] 0 "VTP_Gebläse_Venturi.bcf" "VTP_Gebläse_Venturi.bbl" "VTP_Gebläse_Venturi" 0 -1
   "Literaturverzeichnis.bib" 1775584573 338 cea1fb6e0f21ebe27a7225757f267fc5 ""
-  "VTP_Gebläse_Venturi.bcf" 1776019946 108821 0da744a3dce7465dddd4d52020fdf10b "pdflatex"
+  "VTP_Gebläse_Venturi.bcf" 1776020044 108821 0da744a3dce7465dddd4d52020fdf10b "pdflatex"
   (generated)
   "VTP_Gebläse_Venturi.bbl"
   "VTP_Gebläse_Venturi.blg"
   (rewritten before read)
-["pdflatex"] 1776019942.27276 "c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/VTP_Gebläse_Venturi.tex" "VTP_Gebläse_Venturi.pdf" "VTP_Gebläse_Venturi" 1776019946.64498 2
+["pdflatex"] 1776020040.95995 "c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/VTP_Gebläse_Venturi.tex" "VTP_Gebläse_Venturi.pdf" "VTP_Gebläse_Venturi" 1776020045.00781 2
   "Bilder/HM_Logo_RGB.png" 1775562505 25981 73417aab32ebbad580710f52479f37c8 ""
   "Bilder/Messwerte.png" 1775572565 82619 c7896b7ba06e8db8436347a541cce652 ""
   "Bilder/Versuchsaufbau.png" 1775562511 118443 8c76add4c34a9e088ecd2768c91867b4 ""
@@ -243,11 +243,10 @@
   "Plots/Venturi/Druckverlauf.png" 1775562535 62784 81fcf32e8347d0f15a6a1d3422e4e1e6 ""
   "Plots/Venturi/Geschwindigkeit.png" 1775562539 62009 a7c2c7f55d9687859ba7fa7d791b0b37 ""
   "Plots/Venturi/cp.png" 1775562534 63730 717d591f339813b8b88f08414008f9f1 ""
-  "VTP_Gebläse_Venturi.aux" 1776019946 13112 a7bb1cd40436c7a574bb52bc01daf7ee "pdflatex"
+  "VTP_Gebläse_Venturi.aux" 1776020044 13112 a7bb1cd40436c7a574bb52bc01daf7ee "pdflatex"
   "VTP_Gebläse_Venturi.bbl" 1776019719 2902 4f02c435865f2e5fd02926b56d51448a "biber VTP_Gebläse_Venturi"
-  "VTP_Gebläse_Venturi.run.xml" 1776019946 2457 e5a35f7bea6b87d2e076b7ec8bf87da8 "pdflatex"
   "VTP_Gebläse_Venturi.tex" 1776019937 32587 ac481e77c4e49c23275e9702767a17ae ""
-  "VTP_Gebläse_Venturi.toc" 1776019946 1541 e78c96f3346cfb5c451418fbda344b59 "pdflatex"
+  "VTP_Gebläse_Venturi.toc" 1776020044 1541 e78c96f3346cfb5c451418fbda344b59 "pdflatex"
   "c:/Users/hohei/OneDrive/Desktop/Hochschule/VTP/Venturi/VTP_Gebläse_Venturi.tex" 1776019937 32587 ac481e77c4e49c23275e9702767a17ae ""
   (generated)
   "VTP_Gebläse_Venturi.aux"
