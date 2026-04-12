@@ -89,7 +89,7 @@
 \normalsize
 \vspace{1cm}
 \text{Praktikumsbericht \today} \\
-\text{Versuchsgruppe: XY}
+%\text{Versuchsgruppe: XY}
 \end{flushleft}
 \end{center}
 
@@ -124,11 +124,11 @@
 
 \vspace{3cm}
 \begin{flushleft}
-\textbf{Filipp Brummet, Gruppe XY, Unterschrift} \\
+\textbf{Filipp Brummet} \\
 \vspace{0.25cm}
-\textbf{Roberto Sessa, Gruppe XY, Unterschrift} \\
+\textbf{Roberto Sessa} \\
 \vspace{0.25cm}
-\textbf{Marc Hoheisel, Gruppe XY, Unterschrift} \\
+\textbf{Marc Hoheisel} \\
 %Email: m.hoheisel@hm.edu\\
 %Matr.-Nr.: 29706923\\
 \end{flushleft}
@@ -278,14 +278,15 @@ Mit der Wellenleistung wird der Wirkungsgrad berechnet:
 Im folgenden Plot werden die Kennlinien wieder sichtbar. Wichtig hierbei ist, dass diesmal die Drehzahl über die Linien konstant ist und sich die Düsenöffnungen ändern:
 \begin{figure}[H]
     \centering
-    \includegraphics[width = \linewidth]{Plots/Gebläse/eta_plot.png}
+    \includegraphics[width = 0.8\linewidth]{Plots/Gebläse/eta_plot.png}
     \caption{Strömungsmechanischer Wirkungsgrad in Abhängigkeit des Volumenstroms}
     \label{plot:eta_plot}
 \end{figure}
+\noindent
 Zusätzlich wird ein Muscheldiagram erstellt, mithilfe von griddata in Matlab. Damit werden Flächen mit konstantem Wirkungsgrad sichtbar:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{Plots/Gebläse/Muscheldiagramm.png}
+    \includegraphics[width=0.8\linewidth]{Plots/Gebläse/Muscheldiagramm.png}
     \caption{Muscheldiagramm des Radialgebläses}
     \label{plot:Muscheldiagram}
 \end{figure}
@@ -348,6 +349,7 @@ Kennlinie für das Gebläse erschließen.
 %
 %\subsection{Interpretation der Ergebnisse}
 \clearpage
+\newpage
 \section{Venturi}
 \subsection{Einleitung / Abstract}
 Im folgenden Versuch wird das Druck- und Geschwindigkeitsverhalten einer Strömung innerhalb eines Venturi-Rohrs analysiert. Auf experimentellem und theoretischem Weg werden im Verlauf des Rohrs die Druckwerte, der Druckbeiwert und die Geschwindigkeit ermittelt und anschließend graphisch ausgewertet und verglichen.
@@ -385,21 +387,21 @@ Relative Luftfeuchtigkeit $\varphi_L$ & 38 \% \\
 
 Aus dem gemessenen Werten und der spezifischen Gaskonstante $R_S=287,05 \frac{J}{kg \cdot K}$ lässt sich die Luftdichte errechnen.
 \begin{equation*}
-    \varrho = \frac{95545 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K}=1,137 \frac{kg}{m^3}
+    \varrho = \frac{95545 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K}=1.137 \frac{kg}{m^3}
 \end{equation*}
-Die an den Messpunkten 1-8 gemessenen Differenzdrücke wurden in Tabelle \ref{fig:Messwerte} eingetragen. Der statische Druck $p_0$ wird ermittelt, indem eine lineare Extrapolation aus den Folgedrücken $p_1$ und $p_2$ durchgeführt wird.
+Die an den Messpunkten 1-8 gemessenen Differenzdrücke wurden in Tabelle \ref{fig:Venturi-Werte} eingetragen. Der statische Druck $p_0$ wird ermittelt, indem eine lineare Extrapolation aus den Folgedrücken $p_1$ und $p_2$ durchgeführt wird.
 \begin{equation*}
     p_0=p_1+\frac{p_2-p_1}{105mm-45mm}\cdot (0mm-45mm)= 300 Pa
 \end{equation*}
 Für die Berechnung des Volumenstroms $\dot{V}$ wird die lokale Querschnittsfläche $A_i(0)$ und Strömungsgeschwindigkeit $u(0)$ an der Messstelle 0 benötigt. Die Strömungsgeschwindigkeit wird mithilfe der berechneten Luftdichte $\varrho$ und dem dynamischen Druck, welcher mit dem Schrägrohrmanometer gemessen wurde, errechnet.
 \begin{equation*}
-    A_i(0) = \pi \left( \frac{d_i}{2} \right)^2 = \pi \left( \frac{0,104}{2} \right)^2 = 0,0085m^2
+    A_i(0) = \pi \left( \frac{d_i}{2} \right)^2 = \pi \left( \frac{0.104}{2} \right)^2 = 0.0085m^2
 \end{equation*}
 \begin{equation*}
-    u(0)= \sqrt{\frac{2 \cdot p_{0,dyn}}{\varrho}}= \sqrt{\frac{2 \cdot 40Pa}{1,137 \frac{kg}{m^3}}}=8,39 \frac{m}{s}
+    u(0)= \sqrt{\frac{2 \cdot p_{0,dyn}}{\varrho}}= \sqrt{\frac{2 \cdot 40Pa}{1.137 \frac{kg}{m^3}}}=8.39 \frac{m}{s}
 \end{equation*}
 \begin{equation*}
-    \dot{V}=u(0) \cdot A_i(0) = 0,0713 \frac{m^3}{s}
+    \dot{V}=u(0) \cdot A_i(0) = 0.0713 \frac{m^3}{s}
 \end{equation*}
 
 Aus dem Volumenstrom $\dot{V}$ und den lokalen Querschnittsflächen entlang der Strecke des Venturi-Rohrs lässt sich mit folgender Formel der theoretische Geschwindigkeit errechnen und in einem Graphen über die Position x darstellen (Abbildung \ref{fig:Venturi_Geschwindigkeit}).
@@ -441,13 +443,16 @@ Zuletzt wird aus den gemessenen Drücken $p_i$ und $p_{0,dyn}$, dem errechneten 
     \label{fig:Venturi_cp}
 \end{figure}
 \subsection{Interpretation der Ergebnisse}
-Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle
-zusammen mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck
-nimmt wieder zu. Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem
-Geschwindigkeitsprofil. Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf.
-Die Abweichung der beiden Verläufe zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor.
-Durch diese Einflüsse liegen die realen Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und auch der Endwert des Drucks
-liegt unterhalb des Startwerts.
+Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle zusammen mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck nimmt wieder zu. Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem Geschwindigkeitsprofil. Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf. Die Abweichung der beiden Verläufe zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor. Durch diese Einflüsse liegen die realen Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und der auch der Endwert des Drucks liegt unterhalb des Startwerts.
+
+%\subsection{Anhang Venturi Berechnungen}
+%\subsubsection{Messung}
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=\textwidth]{Bilder/Venturi_Werte.png}
+%    \caption{Wertetabelle Venturi}
+%    \label{fig:Venturi-Werte}
+%\end{figure}
 \section{Anhang}
 \subsubsection*{Messwerte}
 \begin{figure}[H]
