@@ -165,7 +165,7 @@ Zwischen Motor und Laufrad ist eine transparente DMS-Messwelle integriert, mit d
 
 Wie in Abbildung~\ref{fig:versuchsaufbau_gebläse} dargestellt, saugt das Gebläse die Umgebungsluft zunächst über einen rechteckigen Ansaugschacht (Position~1) an und fördert diese in das angeschlossene Prüfrohr mit einem Innendurchmesser von 200~mm und einer Länge von 3500~mm. \\
 \\
-Unmittelbar hinter dem Gebläseausgang ist ein Diffusor angeordnet, der durch Reduktion der Strömungs- geschwindigkeit eine Erhöhung des statischen Drucks bewirkt. Der nachgeschaltete Strömungsgleichrichter (Position~2) dient dazu, den am Diffusorausgang vorhandenen Drall zu reduzieren und eine möglichst homogene Strömung im Rohr sicherzustellen. Am Ende des Prüfrohrs können austauschbare Normdüsen installiert werden, mit deren Hilfe der Strömungsquerschnitt gezielt variiert wird. Auf diese Weise lassen sich unterschiedliche Betriebspunkte des Gebläses durch definierte Drosselzustände einstellen. Es stehen Normdüsen mit Austrittsdurchmessern von 200, 100, 80, 50 und 0~mm zur Verfügung, wobei ein Durchmesser von 0~mm einer vollständigen Schließung und 200~mm einer vollständigen Öffnung des Prüfrohrs entspricht. \\
+Unmittelbar hinter dem Gebläseausgang ist ein Diffusor angeordnet, der durch Reduktion der Strömungs- geschwindigkeit eine Erhöhung des statischen Drucks bewirkt. Der nachgeschaltete Strömungsgleichrichter (Position~2) dient dazu, den am Diffusorausgang vorhandenen Drall zu reduzieren und eine möglichst homogene Strömung im Rohr sicherzustellen. Am Ende des Prüfrohrs können austauschbare Normdüsen installiert werden, mit deren Hilfe der Strömungsquerschnitt gezielt variiert wird. Auf diese Weise lassen sich unterschiedliche Betriebspunkte des Gebläses durch definierte Drosselzustände einstellen. Es stehen Normdüsen mit Austrittsdurchmessern von 200, 120, 100, 80, 50 und 0~mm zur Verfügung, wobei ein Durchmesser von 0~mm einer vollständigen Schließung und 200~mm einer vollständigen Öffnung des Prüfrohrs entspricht. \\
 \\
 Die Erfassung des statischen Drucks erfolgt über vier gleichmäßig über den Rohrumfang verteilte Druckbohrungen (Position~5), die über eine Ringleitung mit einem elektronischen Drucksensor verbunden sind. Zur Bestimmung des dynamischen Drucks am Düsenaustritt wird ein Prandtl-Rohr (Position~6) eingesetzt, welches ein punktförmiges Messverfahren darstellt.
 
@@ -186,7 +186,7 @@ Mit diesen Werten kann auf die Dichte der Luft geschlossen werden:
 \end{equation}
 
 \begin{equation*}
-    \varrho = \frac{95545 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K} = 1,137 \;\frac{kg}{m^3}
+    \varrho = \frac{95550 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K} = 1,137 \;\frac{kg}{m^3}
 \end{equation*}
 
 Fortlaufend werden sechs, für das Gebläse charakterisierende, Kennlinien ermittelt:
@@ -194,7 +194,7 @@ Fortlaufend werden sechs, für das Gebläse charakterisierende, Kennlinien ermit
     \item $\dot{V} = \dot{V} (N)$
     \item $\Delta p_{t,12} = \Delta p_{t,12} (N)$
     \item $P_W =P_W(N)$
-    \item $\eta = \eta(N)$
+    \item $\eta = \eta(\dot{V})$
     \item $\Delta p_{t,12} = \Delta p_{t,12} (\dot{V})$
     \item $\Psi = \Psi (\varphi)$
 \end{itemize}
@@ -210,11 +210,12 @@ Bei einem dynamischen Druck von $p_6 = 143 \ Pa$ ergibt sich:
 \begin{equation*}
     c_{6,ax} = \sqrt{\frac{2}{1,137\frac{kg}{m^3}} \cdot 143 \ Pa} \ = 15,86 \ \frac{m}{s}
 \end{equation*}
-Weiter wird mit einem Korrekturfaktor von $k_1 = 0,8733$ und der Geschwindigkeit $c_{6,ax}$ der Volumenstrom ermittelt:
+Weiter wird mit einem Korrekturfaktor von $k_1 = 0,8733$ für eine Düsenöffnung von $D_D = 200 \ mm$ und der Geschwindigkeit $c_{6,ax}$ der Volumenstrom ermittelt:
 \begin{equation*}
     \dot{V} = 0,8733  \cdot 15,86 \frac{m}{s} \cdot \frac{\pi \cdot (0,2 \ m)^2}{4} = 0,435 \ \frac{m^3}{s}
 \end{equation*}
-Der Korrekturfaktor ist vonnöten, da der dynamische Druck an Punkt 6 nur punktuell gemessen wird und dem entsprechend nicht der Durchschnittsgeschwindigkeit entspricht. Der Korrekturfaktor wurde im Skript \cite{VTP_Beschreibung} vorgegeben.\\
+Der Korrekturfaktor ist vonnöten, da der dynamische Druck an Punkt 6 nur punktuell gemessen wird und dem entsprechend nicht der Durchschnittsgeschwindigkeit entspricht.
+Der Korrekturfaktor wurde im Skript \cite{VTP_Beschreibung} vorgegeben und ist für jede Düsenöffnung unterschiedlich (vlg. Abbildung \ref{fig:Messwerte}).\\
 Mit den verschiedenen Düsenöffnungen und Drehzahlen ergeben sich folgende Kennlinien:
 \begin{figure}[H]
     \centering
@@ -325,7 +326,7 @@ Die Wellenleistung in Plot \ref{plot:P_welle} steigt auch wie die theoretische �
 Zu sehen ist, dass bei offenen Rohr die Leistung am höchsten ist, da dort der größte Volumenstrom gefördert wird. Während bei geschlossenem Rohr nur
 die Reibungs und Ventilationsverluste kompensiert werden müssen.\\
 Der strömungsmechanische Wirkungsgrad $\eta$ in Plot \ref{plot:eta_plot} zeigt ein Maximum bei mittleren Drosselungen und höheren
-Drehzahlen. Es ist zu sehen, dass das Maximum bei allen Variationen auf ca $40 \%$ begrenzt ist. Bei geschlossenem Rohr
+Drehzahlen. Bei geschlossenem Rohr
 ist der Wirkungsgrad definitionsgemäß Null, da kein Volumenstrom erzeugt wird. Bei offenen Rohr ist der Wirkungsgrad gering,
 da die Totaldruckerhöhung in diesem Falle sehr gering ist. Dieses Verhalten und die Kennlinien sind sehr ähnlich zu den theoretisch
 behandelten Kennlinien im Lehrbuch \cite{Lehrbuch}.\\
@@ -488,7 +489,7 @@ M_welle_mat=reshape(M_welle,6,6);
 
 k_1=[0.8733 1.025 1.0313 1.0278 1.0227 1];
 
-p_inf = 95545;
+p_inf = 95550;
 T     = 292.75;
 R_S   = 287.05;
 rho   = p_inf/(R_S*T);
