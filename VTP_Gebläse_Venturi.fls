@@ -395,12 +395,9 @@ INPUT C:\Users\hohei\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss10.tfm
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
-OUTPUT VTP_Gebläse_Venturi.toc
-INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
-INPUT .\Bilder\HM_Logo_RGB.png
-INPUT .\Bilder\HM_Logo_RGB.png
-INPUT .\Bilder\HM_Logo_RGB.png
-INPUT .\Bilder\HM_Logo_RGB.png
+INPUT .\VTP_Gebläse_Venturi.toc
+INPUT .\VTP_Gebläse_Venturi.toc
+INPUT VTP_Gebläse_Venturi.toc
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
@@ -415,6 +412,12 @@ INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+OUTPUT VTP_Gebläse_Venturi.toc
+INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
+INPUT .\Bilder\HM_Logo_RGB.png
+INPUT .\Bilder\HM_Logo_RGB.png
+INPUT .\Bilder\HM_Logo_RGB.png
+INPUT .\Bilder\HM_Logo_RGB.png
 INPUT C:\Users\hohei\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
 INPUT .\Bilder\Versuchsaufbau.png
 INPUT .\Bilder\Versuchsaufbau.png
@@ -534,10 +537,6 @@ INPUT .\Plots\Venturi\cp.png
 INPUT .\Plots\Venturi\cp.png
 INPUT .\Plots\Venturi\cp.png
 INPUT .\Plots\Venturi\cp.png
-INPUT .\Bilder\HM_Logo_RGB.png
-INPUT .\Bilder\HM_Logo_RGB.png
-INPUT .\Bilder\HM_Logo_RGB.png
-INPUT .\Bilder\HM_Logo_RGB.png
 INPUT .\Bilder\Messwerte.png
 INPUT .\Bilder\Messwerte.png
 INPUT .\Bilder\Messwerte.png
@@ -583,6 +582,7 @@ INPUT .\Bilder\HM_Logo_RGB.png
 INPUT .\Bilder\HM_Logo_RGB.png
 INPUT .\Bilder\HM_Logo_RGB.png
 INPUT VTP_Gebläse_Venturi.aux
+INPUT VTP_Gebläse_Venturi.run.xml
 OUTPUT VTP_Gebläse_Venturi.run.xml
 INPUT C:\Users\hohei\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\hohei\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
