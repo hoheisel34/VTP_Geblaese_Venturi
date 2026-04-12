@@ -89,7 +89,10 @@
 \normalsize
 \vspace{1cm}
 \text{Praktikumsbericht \today} \\
+<<<<<<< HEAD
 %\text{Versuchsgruppe: XY}
+=======
+>>>>>>> f7e2758e2eda898a4889a4c273cdbaf1a29be930
 \end{flushleft}
 \end{center}
 
@@ -163,7 +166,7 @@ Zwischen Motor und Laufrad ist eine transparente DMS-Messwelle integriert, mit d
 \subsubsection{Versuchsdurchführung} 
 
 
-Wie in Abbildung~\ref{fig:versuchsaufbau_gebläse}.) dargestellt, saugt das Gebläse die Umgebungsluft zunächst über einen rechteckigen Ansaugschacht (Position~1) an und fördert diese in das angeschlossene Prüfrohr mit einem Innendurchmesser von 200~mm und einer Länge von 3500~mm. \\
+Wie in Abbildung~\ref{fig:versuchsaufbau_gebläse}dargestellt, saugt das Gebläse die Umgebungsluft zunächst über einen rechteckigen Ansaugschacht (Position~1) an und fördert diese in das angeschlossene Prüfrohr mit einem Innendurchmesser von 200~mm und einer Länge von 3500~mm. \\
 \\
 Unmittelbar hinter dem Gebläseausgang ist ein Diffusor angeordnet, der durch Reduktion der Strömungs- geschwindigkeit eine Erhöhung des statischen Drucks bewirkt. Der nachgeschaltete Strömungsgleichrichter (Position~2) dient dazu, den am Diffusorausgang vorhandenen Drall zu reduzieren und eine möglichst homogene Strömung im Rohr sicherzustellen. Am Ende des Prüfrohrs können austauschbare Normdüsen installiert werden, mit deren Hilfe der Strömungsquerschnitt gezielt variiert wird. Auf diese Weise lassen sich unterschiedliche Betriebspunkte des Gebläses durch definierte Drosselzustände einstellen. Es stehen Normdüsen mit Austrittsdurchmessern von 200, 100, 80, 50 und 0~mm zur Verfügung, wobei ein Durchmesser von 0~mm einer vollständigen Schließung und 200~mm einer vollständigen Öffnung des Prüfrohrs entspricht. \\
 \\
@@ -387,9 +390,15 @@ Relative Luftfeuchtigkeit $\varphi_L$ & 38 \% \\
 
 Aus dem gemessenen Werten und der spezifischen Gaskonstante $R_S=287,05 \frac{J}{kg \cdot K}$ lässt sich die Luftdichte errechnen.
 \begin{equation*}
+<<<<<<< HEAD
     \varrho = \frac{95545 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K}=1.137 \frac{kg}{m^3}
 \end{equation*}
 Die an den Messpunkten 1-8 gemessenen Differenzdrücke wurden in Tabelle \ref{fig:Venturi-Werte} eingetragen. Der statische Druck $p_0$ wird ermittelt, indem eine lineare Extrapolation aus den Folgedrücken $p_1$ und $p_2$ durchgeführt wird.
+=======
+    \varrho = \frac{95550 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K}=1,137 \frac{kg}{m^3}
+\end{equation*}
+Die an den Messpunkten 1-8 gemessenen Differenzdrücke wurden in Tabelle \ref{fig:Messwerte} eingetragen. \\ Der statische Druck $p_0$ wird ermittelt, indem eine lineare Extrapolation aus den Folgedrücken $p_1$ und $p_2$ durchgeführt wird.
+>>>>>>> f7e2758e2eda898a4889a4c273cdbaf1a29be930
 \begin{equation*}
     p_0=p_1+\frac{p_2-p_1}{105mm-45mm}\cdot (0mm-45mm)= 300 Pa
 \end{equation*}
@@ -404,10 +413,26 @@ Für die Berechnung des Volumenstroms $\dot{V}$ wird die lokale Querschnittsflä
     \dot{V}=u(0) \cdot A_i(0) = 0.0713 \frac{m^3}{s}
 \end{equation*}
 
-Aus dem Volumenstrom $\dot{V}$ und den lokalen Querschnittsflächen entlang der Strecke des Venturi-Rohrs lässt sich mit folgender Formel der theoretische Geschwindigkeit errechnen und in einem Graphen über die Position x darstellen (Abbildung \ref{fig:Venturi_Geschwindigkeit}).
+Aus dem Volumenstrom $\dot{V}$ und den lokalen Querschnittsflächen entlang der Strecke des Venturi-Rohrs lässt sich mit folgender Formel die theoretische Geschwindigkeit errechnen und in einem Graphen über die Position x darstellen (Abbildung \ref{fig:Venturi_Geschwindigkeit}).
 
 \begin{equation*}
     u_{i,theor}=\frac{\dot{V}}{A_i}
+\end{equation*}
+
+
+
+In der Abbildung \ref{fig:Venturi_Druckverlauf} sind der gemessene Druck $p(x)$ und der errechnete theoretische Druck $p_{theor}(x)$ dargestellt.
+\begin{equation*}
+    p_{theor}(x)=p_0 + \frac{\varrho}{2}\cdot(u_0^2-u_{i,theor}^2)
+\end{equation*}
+
+
+Zuletzt wird aus den gemessenen Drücken $p_i$ und $p_{0,dyn}$, dem errechneten Referenzdruck $p_0$ und den theoretischen Drücken $p_{i,theor}$ der Druckbeiwert $c_p$ und der theoretische Druckbeiwert $c_{p,theor}$ über die Strecke $x$ berechnet und in der Abbildung \ref{fig:Venturi_cp} dargestellt.
+\begin{equation*}
+    c_p=\frac{p_i-p_0}{p_{0,dyn}}
+\end{equation*}
+\begin{equation*}
+    c_{p,theor}=\frac{p_{i,theor}-p_0}{p_{0,dyn}}
 \end{equation*}
 
 \begin{figure}[h]
@@ -417,11 +442,6 @@ Aus dem Volumenstrom $\dot{V}$ und den lokalen Querschnittsflächen entlang der 
     \label{fig:Venturi_Geschwindigkeit}
 \end{figure}
 
-In der Abbildung \ref{fig:Venturi_Druckverlauf} sind der gemessene Druck $p(x)$ und der errechnete theoretische Druck $p_{theor}(x)$ dargestellt.
-\begin{equation*}
-    p_{theor}(x)=p_0 + \frac{\varrho}{2}\cdot(u_0^2-u_{i,theor}^2)
-\end{equation*}
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{Plots/Venturi/Druckverlauf.png}
@@ -429,13 +449,6 @@ In der Abbildung \ref{fig:Venturi_Druckverlauf} sind der gemessene Druck $p(x)$ 
     \label{fig:Venturi_Druckverlauf}
 \end{figure}
 
-Zuletzt wird aus den gemessenen Drücken $p_i$ und $p_{0,dyn}$, dem errechneten Referenzdruck $p_0$ und den theoretischen Drücken $p_{i,theor}$ der Druckbeiwert $c_p$ und der theoretische Druckbeiwert $c_{p,theor}$ über die Strecke $x$ berechnet und in der Abbildung \ref{fig:Venturi_cp} dargestellt.
-\begin{equation*}
-    c_p=\frac{p_i-p_0}{p_{0,dyn}}
-\end{equation*}
-\begin{equation*}
-    c_{p,theor}=\frac{p_{i,theor}-p_0}{p_{0,dyn}}
-\end{equation*}
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{Plots/Venturi/cp.png}
@@ -443,6 +456,7 @@ Zuletzt wird aus den gemessenen Drücken $p_i$ und $p_{0,dyn}$, dem errechneten 
     \label{fig:Venturi_cp}
 \end{figure}
 \subsection{Interpretation der Ergebnisse}
+<<<<<<< HEAD
 Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle zusammen mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck nimmt wieder zu. Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem Geschwindigkeitsprofil. Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf. Die Abweichung der beiden Verläufe zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor. Durch diese Einflüsse liegen die realen Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und der auch der Endwert des Drucks liegt unterhalb des Startwerts.
 
 %\subsection{Anhang Venturi Berechnungen}
@@ -453,6 +467,15 @@ Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohr
 %    \caption{Wertetabelle Venturi}
 %    \label{fig:Venturi-Werte}
 %\end{figure}
+=======
+Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle
+zusammen mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck
+nimmt zu. Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem
+Geschwindigkeitsprofil. Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf.
+Die Abweichung der beiden Verläufe zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor.
+Durch diese Einflüsse liegen die realen Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und auch der Endwert des Drucks
+liegt unterhalb des Startwerts.
+>>>>>>> f7e2758e2eda898a4889a4c273cdbaf1a29be930
 \section{Anhang}
 \subsubsection*{Messwerte}
 \begin{figure}[H]
@@ -622,7 +645,7 @@ end
 \end{lstlisting}
 \newpage
 \subsubsection*{MATLAB-Code Venturi}
-\begin{lstlisting}[language=Matlab, caption={Berechnung und Plot des Druckbeiwerts $c_p$}, label={code:cp}]
+\begin{lstlisting}[language=Matlab, caption={Berechnung und Plot des Druckbeiwerts $c_p$, Druckverlauf $p$ und Geschwindigkeitsverlauf $u$}, label={code:cp}]
 clc;
 clear;
 close;
