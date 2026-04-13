@@ -56,6 +56,7 @@
 \ofoot{\pagemark}
 \automark[subsection]{section}  % \automark[rechte Seite]{linke Seite}
 \begin{document}
+\raggedbottom
 
 % für Abbildung von Matlab code
 \lstset{
@@ -316,6 +317,8 @@ Plottet man nun diese Kennzahlen sieht man, dass alle übereinander liegen:
     \label{plot:Psi}
 \end{figure}
 
+
+\clearpage
 \subsection{Interpretation der Ergebnisse}
 Die experimentell gemessenen Messpunkte zeigen insgesamt ein physikalisch konsistentes Verhalten. Diese 
 decken sich gut mit den theoretischen Ähnlichkeitsgesetzen aus dem Lehrbuch \cite{Lehrbuch}. %Hier skript oder Lehrbuch referenzieren
@@ -467,9 +470,15 @@ Zuletzt wird aus den gemessenen Drücken $p_i$ und $p_{0,dyn}$, dem errechneten 
     \caption{Experimenteller und theoretischer Verlauf des Druckbeiwerts}
     \label{fig:Venturi_cp}
 \end{figure}
-\newpage
+\clearpage
 \subsection{Interpretation der Ergebnisse}
-Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle zusammen mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck nimmt wieder zu. Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem Geschwindigkeitsprofil. Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf. Die Abweichung der beiden Verläufe zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor. Durch diese Einflüsse liegen die realen Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und der auch der Endwert des Drucks liegt unterhalb des Startwerts.
+\noindent
+Die Auswertung der Druck- und Geschwindigkeitsverläufe entlang des Venturi-Rohrs zeigt die erwartete Druckabsenkung in der Rohr-Engstelle zusammen
+mit einer Beschleunigung der Strömung. Im Bereich des Diffusors sinkt die Geschwindigkeit der Strömung wieder und der statische Druck nimmt wieder zu.
+Die berechneten, theoretischen Werte basieren auf der Annahme einer reibungsfreien, inkompressiblen Strömung mit gleichmäßigem Geschwindigkeitsprofil.
+Die jeweiligen Graphen der theoretischen und experimentell gemessenen Werte zeigen einen sehr ähnlichen Verlauf. Die Abweichung der beiden Verläufe
+zeigt den Einfluss der real auftretenden Effekte von Reibungsverlusten und Strömungsablösungen im Diffusor. Durch diese Einflüsse liegen die realen
+Druckwerte innerhalb des Venturirohrs unterhalb der theoretischen Werte und der auch der Endwert des Drucks liegt unterhalb des Startwerts.
 
 %\subsection{Anhang Venturi Berechnungen}
 %\subsubsection{Messung}
