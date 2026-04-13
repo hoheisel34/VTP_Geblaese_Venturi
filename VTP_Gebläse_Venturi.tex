@@ -391,22 +391,39 @@ Relative Luftfeuchtigkeit $\varphi_L$ & 38 \% \\
 
 Aus dem gemessenen Werten und der spezifischen Gaskonstante $R_S=287,05 \frac{J}{kg \cdot K}$ lässt sich die Luftdichte errechnen.
 \begin{equation}
-    \varrho = \frac{95550 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K}=1.137 \frac{kg}{m^3}
+    \varrho = \frac{p_\infty}{R_S T}
 \end{equation}
+\begin{equation*}
+    \varrho = \frac{95550 \ Pa}{287,05 \ \frac{J}{kgK} \cdot 292,75 \ K}=1.137 \frac{kg}{m^3}
+\end{equation*}
 Die an den Messpunkten 1-8 gemessenen Differenzdrücke wurden notiert (siehe Abbildung \ref{fig:Messwerte}). Der statische Druck $p_0$ wird ermittelt, indem eine lineare Extrapolation aus den Folgedrücken $p_1$ und $p_2$ durchgeführt wird.
 \begin{equation}
-    p_0=p_1+\frac{p_2-p_1}{105mm-45mm}\cdot (0mm-45mm)= 300 Pa
+    p_0=p_1+\frac{p_2-p_1}{105mm-45mm}\cdot (0mm-45mm)
 \end{equation}
+\begin{equation*}
+    p_0=270Pa+\frac{230Pa-270Pa}{105mm-45mm}\cdot (0mm-45mm)= 300Pa
+\end{equation*}
 Für die Berechnung des Volumenstroms $\dot{V}$ wird die lokale Querschnittsfläche $A_i(0)$ und Strömungsgeschwindigkeit $u(0)$ an der Messstelle 0 benötigt. Die Strömungsgeschwindigkeit wird mithilfe der berechneten Luftdichte $\varrho$ und dem dynamischen Druck, welcher mit dem Schrägrohrmanometer gemessen wurde, errechnet.
 \begin{equation}
-    A_i(0) = \pi \left( \frac{d_i}{2} \right)^2 = \pi \left( \frac{0.104}{2} \right)^2 = 0.0085m^2
+    A_i(x) = \pi \left( \frac{d_i}{2} \right)^2 
 \end{equation}
+\begin{equation*}
+    A_i(0) = \pi \left( \frac{0.104}{2} \right)^2 = 0.0085m^2
+\end{equation*}
+\\ \\
 \begin{equation}
-    u(0)= \sqrt{\frac{2 \cdot p_{0,dyn}}{\varrho}}= \sqrt{\frac{2 \cdot 40Pa}{1.137 \frac{kg}{m^3}}}=8.39 \frac{m}{s}
+    u(x)= \sqrt{\frac{2 \cdot p_{0,dyn}}{\varrho}}
 \end{equation}
+\begin{equation*}
+    u(0)= \sqrt{\frac{2 \cdot 40Pa}{1.137 \frac{kg}{m^3}}}=8.39 \frac{m}{s}
+\end{equation*}
+\\ \\
 \begin{equation}
-    \dot{V}=u(0) \cdot A_i(0) = 0.0713 \frac{m^3}{s}
+    \dot{V}=u(x) \cdot A_i(x) 
 \end{equation}
+\begin{equation*}
+    \dot{V}= 8.39 \frac{m}{s} \cdot 0.0085m^2 = 0.0713 \frac{m^3}{s}
+\end{equation*}
 
 Aus dem Volumenstrom $\dot{V}$ und den lokalen Querschnittsflächen entlang der Strecke des Venturi-Rohrs lässt sich mit folgender Formel die theoretische Geschwindigkeit errechnen und in einem Graphen über die Position x darstellen (Abbildung \ref{fig:Venturi_Geschwindigkeit}).
 
@@ -424,10 +441,10 @@ In der Abbildung \ref{fig:Venturi_Druckverlauf} sind der gemessene Druck $p(x)$ 
 
 Zuletzt wird aus den gemessenen Drücken $p_i$ und $p_{0,dyn}$, dem errechneten Referenzdruck $p_0$ und den theoretischen Drücken $p_{i,theor}$ der Druckbeiwert $c_p$ und der theoretische Druckbeiwert $c_{p,theor}$ über die Strecke $x$ berechnet und in der Abbildung \ref{fig:Venturi_cp} dargestellt.
 \begin{equation}
-    c_p=\frac{p_i-p_0}{p_{0,dyn}}
+    c_p(x)=\frac{p_i-p_0}{p_{0,dyn}}
 \end{equation}
 \begin{equation}
-    c_{p,theor}=\frac{p_{i,theor}-p_0}{p_{0,dyn}}
+    c_{p,theor}(x)=\frac{p_{i,theor}(x)-p_0}{p_{0,dyn}}
 \end{equation}
 
 \begin{figure}[h]
